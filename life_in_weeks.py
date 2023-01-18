@@ -10,4 +10,7 @@ days_left = years_left * 365
 weeks_left = years_left * 52
 months_left = years_left * 12
 
-print(f"You have {days_left} days, {weeks_left} weeks, and {months_left} months left.")
+if int(life_expectancy) < 100:
+    print(f"You have {days_left} days, {weeks_left} weeks, and {months_left} months left.")
+else:
+    print("Over 100 years is unrealistic. Come on man!")
