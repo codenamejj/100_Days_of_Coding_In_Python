@@ -54,6 +54,7 @@ def process_coins():
     return total
 
 def transaction_successful(received_payment, drink_cost):
+    """returns True if payment is equal or more than drink cost"""
     if received_payment >= drink_cost:
         global our_profit
         change = round(received_payment - drink_cost, 2)
